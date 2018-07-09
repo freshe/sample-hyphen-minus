@@ -1,0 +1,14 @@
+﻿@model TestViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+   
+}
+
+<p>
+    Value: @Model.DoubleValue.ToString().Replace(",", ".")
+</p>
+
+<p>
+    Value (raw): @Html.Raw(Model.DoubleValue.ToString().Replace(",", "."))
+</p>
